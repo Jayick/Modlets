@@ -1,0 +1,10 @@
+<configs>
+<append xpath="/recipes">
+<recipe name="Barbwire Large Fence" count="1">
+	<ingredient name="resourceForgedIron" count="10"/>
+</recipe>
+<recipe name="Metal Large Wall" count="1">
+	<ingredient name="resourceForgedIron" count="15"/>
+</recipe>
+</append>
+</configs>

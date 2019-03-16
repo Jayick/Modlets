@@ -1,0 +1,48 @@
+<configs>
+<append xpath="/blocks">
+
+		<block name="Barbwire Large Fence">
+			<property name="TakeDelay" value="15"/>
+			<property name="Class" value="Damage"/>
+			<property name="Damage" value="1"/>
+			<property name="DamageType" value="BarbedWire"/>
+			<property name="Damage_received" value="6"/>
+			<property name="Material" value="MbarbedWire"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="MaxDamage" value="100000" />
+			<property name="Mesh" value="models"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,4,4"/>
+			<property name="Model" value="#@modfolder:Resources/BarbedFence.unity3d?BarbedFencePrefab"/>
+			<property name="CustomIcon" value="barbedfence"/>
+			<property name="Collide" value="movement,melee,rocket"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="CanPlayersSpawnOn" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="15"/></property>
+			<drop event="Destroy" name="resourceScrapIron" count="1,12" prob="1"/>
+			<property name="Group" value="Tools/Traps,Science"/>
+			<property name="FilterTags" value="fdecor,ftraps"/>
+		</block>
+		<block name="Metal Large Wall">
+			<property name="Material" value="Msteel"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,4,4"/>
+			<property name="Model" value="#@modfolder:Resources/MetalFence.unity3d?MetalFencePrefab"/>
+			<property name="CustomIcon" value="mfence"/>
+			<property name="MaxDamage" value="100000" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="15"/></property>
+			<drop event="Destroy" name="resourceScrapIron" count="1,12" prob="1"/>
+			<property name="Group" value="Building"/>
+			<property name="FilterTags" value="fdecor,fbuilding"/>
+		</block>
+		</append>
+		</configs>
